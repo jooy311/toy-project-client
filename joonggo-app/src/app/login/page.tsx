@@ -1,10 +1,10 @@
-import LoginBtn from "../components/login-btn";
-import LoginInput from "../components/login-btn";
+import LoginBtn from "../_components/login/login-btn";
+import LoginInput from "../_components/login/login-input";
 import Image from "next/image";
 
 const LoginPage: React.FC = () => {
   return (
-    <main className="relative flex-grow border-b-2">
+    <main className="relative flex-grow border-b-2" style={{ minHeight:"-webkit-fill-available", WebkitOverflowScrolling: "touch"}} >
       <div className="min-h-[100vh] flex flex-col justify-center items-center mx-auto max-w-[1280px] px-4 md:px-8 2xl:px-16 box-content">
         <div className="max-[767px]:w-full mx-auto my-auto flex flex-col justify-center items-center space-y-5">
           <a
@@ -33,49 +33,15 @@ const LoginPage: React.FC = () => {
                     </h2>
                   </div>
                   <LoginInput />
-                  {/* <span className="block" title="ID">
-                    ID :{" "}
-                  </span>
-                  <input
-                    className="flex-1 mr-[22px]"
-                    id="auto-login"
-                    type="text"
-                  />
-                  <span title="PW">PW : </span> */}
-                  {/* <input
-                    className="flex-1 mr-[22px]"
-                    id="auto-login"
-                    type="text"
-                  /> */}
+                  <LoginBtn />
+                 
                   <div className="mt-atuo">
                     <div>
                       <label
                         htmlFor="auto-login"
                         className="flex justify-start items-center cursor-pointer"
                       >
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="#0DCC5A"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="inline-block mr-2"
-                        >
-                          <path
-                            d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                            stroke="#0DCC5A"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                          <path
-                            d="M16 9L10.5 14.5L8 12"
-                            stroke="#ffffff"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
+                        
                         <span className="inline-block font-semibold text-sm">
                           로그인 유지하기
                         </span>
