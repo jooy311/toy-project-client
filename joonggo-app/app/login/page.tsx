@@ -1,5 +1,9 @@
 import LoginBtn from "../_components/login/login-btn";
+<<<<<<< HEAD:joonggo-app/src/app/login/page.tsx
 import LoginInput from "../_components/login/login-input";
+=======
+import LoginInput from "../_components/login/login-btn";
+>>>>>>> develop:joonggo-app/app/login/page.tsx
 import Image from "next/image";
 
 const LoginPage: React.FC = () => {
